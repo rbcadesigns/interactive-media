@@ -1,0 +1,94 @@
+img {
+    border: none; 
+    border-color:transparent;
+}
+
+body {
+    background-image: url(Workbook/Images/underwater-bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    color:rgb(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:larger;
+    text-align: center;
+}
+
+/* The "overflow: hidden" property on the "p" tag is to clear the float so that the following content is not affected by it. */
+p {
+    overflow: hidden;
+  }
+
+strong {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size:larger;
+}
+
+* {
+    margin: 5;
+    padding: 0;
+  }
+
+  h1 {
+    color:rgb(255, 252, 62);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+
+h2 {
+    color: #73b0ff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+/* Removes the default grey box around buttons */
+  button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+.fish{
+    display:flex;
+    float:left;
+    margin-left:80px;
+    padding-right: 5%;
+}
+
+.crab{
+    display:flex;
+    float:left;
+    margin: 50px;
+    transform: rotate(10deg);
+    padding-right: 5%;
+}
+
+.diver{
+    display:flex;
+    float:left;
+    margin: 50px;
+    transform: rotate(-20deg);
+}
+
+/* creating a draggable interface */
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  .box {
+    border: 3px solid #666;
+    background-color: #ddd;
+    border-radius: .5em;
+    padding: 10px;
+    cursor: move;
+  }
+  
